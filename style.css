@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{padding:0; margin:0; box-sizing: border-box;}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.maincard {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(244, 38%, 16%);
+    max-width: 75rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.cardtxt {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.txth1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.txth1 b{    
+    color: hsl(277, 64%, 61%);
+}
+
+.txtp {
+    font-family: 'Inter', sans-serif;   
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.secfoot {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.secfoot div {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    margin-right: 2rem;
+}
+
+.secfoot h1 {
+    padding-top: 3.3rem;
+    font-size: 1.7rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.secfoot p {
+    font-family: 'Lexend Deca', sans-serif; 
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-top: 0.2rem;
+    font-size: 1rem;
+}
+
+.mainimg {
+    background-image: url(images/image-header-mobile.jpg);
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32rem;
+    min-width: 35rem;
+}
+
+.mainimg::after {
+    background-color: #550081;
+    content: '';
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 32rem;
+    min-width: 35rem;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.imgoverlay {
+    background-color: #9553D2;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 32rem;
+    min-width: 15rem;
+    opacity: 0.1;
+    mix-blend-mode: overlay;
+    position: absolute;
+}
+
+.attribution { font-size: 11px; font-family: 'Lexend Deca', sans-serif; color: white; text-align: center; padding: 2rem;}
+.attribution a { color: hsl(277, 64%, 61%); }
